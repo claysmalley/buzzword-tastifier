@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Buzzword tastifier",
+	"version": "1.0",
+	"description": "Replaces instances of startup buzzwords on webpages with more delicious words",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
